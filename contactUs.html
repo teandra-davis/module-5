@@ -18,9 +18,25 @@
     <title>Contact</title>
 </head>
 <body>
+    <nav class="navbar">
+        <ul class="navlinks">
+            <div class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </div>
+        </ul>
+    </nav>
+    <header class = "container ms-auto">Contact</header>
 
     <form action="#">
-
+        Do you want us to send you emails?
+        <br>
+        <input type="radio" name="agree" value="yes">Yes
+        <br>
+        <input type="radio" name="agree" value="no">No
+        <br>
+        
         <div>
             <input type="text" name="name" id="name" placeholder="Name" required>
         </div>
@@ -32,14 +48,9 @@
         <div>
             <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
         </div>
-            
 
         <div>
-            <textarea name="message" id="message" placeholder="Get Connected!"></textarea>
-        </div>
-
-        <div>
-            <input type="submit" name="submit" id ="submit" value="Send">
+            <input type="submit" name="submit" id ="submit" value="Submit">
         </div>
 </form>
 </body>
