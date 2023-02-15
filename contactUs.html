@@ -27,31 +27,53 @@
             </div>
         </ul>
     </nav>
-    <header class = "container ms-auto">Contact</header>
 
-    <form action="#">
-        Do you want us to send you emails?
-        <br>
-        <input type="radio" name="agree" value="yes">Yes
-        <br>
-        <input type="radio" name="agree" value="no">No
-        <br>
-        
-        <div>
-            <input type="text" name="name" id="name" placeholder="Name" required>
-        </div>
 
-        <div>
-            <input type="email" name="email" id="email" placeholder="Email" required>
-        </div>
-            
-        <div>
-            <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
-        </div>
+    <section id="contact">
+        <div class="conatiner-fluid p-5">
+            <div class = "text-center">
+                <h1>Contact Us</h1>
+                <p>Fill out this form to get started!</p>
+            </div>
 
-        <div>
-            <input type="submit" name="submit" id ="submit" value="Submit">
+            <div class = "row justify-content-center my-5 p-5">
+                <form action="#">
+                    
+                    
+                    <label for="name" class="form-label">Your Name:</label>
+                    <input type="text" class = "form-control" id = "name" placeholder="John Doe" required>
+                    
+                    <br>
+
+                    <label for="email" class="form-label">Email Address:</label>
+                    <input type="email" class = "form-control" id = "email" placeholder="example@email.com">
+
+                    <br>
+
+                    <label for="tel" class="form-label">Phone Number:</label>
+                    <input type="tel" class = "form-control" id = "tel" placeholder="(###) ###-####">
+
+                    <br>
+
+                    <label for="details" class="form-label">Details:</label>
+                    <textarea class = "form-control" id = "details" style = "height: 140px" placeholder="I was thinking..."></textarea>
+                    
+                    <br>
+
+                    <label for="" class="form-label">Do you want us to send you emails?</label>
+                    <br>
+                    <input type="radio" name="agree" value="yes">Yes
+                    <br>
+                    <input type="radio" name="agree" value="no">No
+                    <br>
+
+                    <div class = "mb-4 text-center p-5">
+                        <button class = "btn btn-secondary">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
-</form>
+    </section>
+    
 </body>
 </html>
